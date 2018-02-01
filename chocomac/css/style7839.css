@@ -1,0 +1,1676 @@
+/*---------- 1. Global Styles ----------*/
+html {
+    overflow-y: scroll;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+}
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    line-height: 27.2px;
+    font: 300 16px/27.2px 'Vodafone Rg';
+    color: #aeaeae;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+:focus {
+    outline: none;
+}  
+a {
+    color: #aeaeae;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+} 
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+} 
+a.highlight:hover {
+    color: #aeaeae;
+}
+section {
+    min-height: 100%;
+    /*min-width: 100%;*/
+    height:auto;
+    background-position: center center;
+    background-size: cover;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+/*---------- 2. Navigation and Logo Section ----------*/
+
+/*---------- Default Nav Style ----------*/
+.navbar-default {
+    padding: 10px;
+    margin-bottom: 0;
+    font-family: 'Vodafone Rg';
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-color: transparent;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.navbar-nav>li>a {
+    /*padding: 17px 0 15px 30px;*/
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    /*background-color: #000;*/
+    background-color: rgba(94, 36, 17, 1);
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus {
+    /*background-color: #000;*/
+    background-color: rgba(94, 36, 17, 1);
+    color: #fff;
+}
+
+/*---------- Navigation Collapse Default Style ----------*/
+@media (min-width: 768px) {
+    .top-nav-collapse {
+        padding: 4px 0;
+        margin-bottom: 0px;
+        font-family: 'Vodafone Rg';
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: none;
+        border-color: transparent;
+        background-color: #fff;
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+nav.navbar {
+    background-color: rgba(94, 36, 17, 0.51) !important;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+@media (max-width: 767px) {
+    nav.navbar {
+        border-radius: 0;
+        border: none;
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08)!important;
+    }
+}
+.navbar-default .navbar-toggle {
+    border: none;
+}
+.navbar-nav li a {
+    color:#000;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 20px 0;
+    margin: auto;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/*---------- Transparent Navigation With White Text Color ----------*/
+@media (min-width: 768px) {
+    nav.navbar.transparent-white {
+        background-color: transparent;
+        box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.3)!important;
+    }
+    .transparent-white li a {
+        color: #fff!important;
+        letter-spacing: 2px;
+    }
+    nav.navbar.transparent-white .logo-light {
+        display: initial;
+    }
+    nav.navbar.transparent-white .logo-dark {
+        display: none;
+    }
+    nav.navbar.transparent-white.top-nav-collapse {
+        background-color: #fff;
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08)!important;
+    }
+    nav.navbar.transparent-white.top-nav-collapse li a {
+        color: #000!important;
+        letter-spacing: 1.5px;
+    }
+    nav.navbar.transparent-white.top-nav-collapse .logo-light {
+        display: none;
+    }
+    nav.navbar.transparent-white.top-nav-collapse .logo-dark {
+        display: initial;
+    }
+}
+.transparent-white .navbar-nav>li>a {
+    color: #000;
+}
+.transparent-white .navbar-nav>li>a:hover {
+    color: #000;
+}
+.transparent-white .navbar-nav>li>a:focus {
+    color: #000;
+}
+.transparent-white.navbar {
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08)!important;
+}
+.transparent-white.navbar .logo-light {
+    display: none;
+}
+.transparent-white.navbar .logo-dark {
+    display: initial;
+}
+.transparent-white.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+/*---------- Transparent Navigation With Black Text Color ----------*/
+@media (min-width: 768px) {
+    nav.navbar.transparent-black {
+        background-color: transparent;
+        box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.7)!important;
+    }
+    .transparent-black li a {
+        color: #000!important;
+        letter-spacing: 1.5px;
+    }
+    nav.navbar.transparent-black .logo-light {
+        display: none;
+    }
+    nav.navbar.transparent-black .logo-dark {
+        display: initial;
+    }
+    nav.navbar.transparent-black.top-nav-collapse {
+        background-color: #fff;
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08)!important;
+    }
+    .transparent-black.top-nav-collapse li a {
+        color: #000!important;
+        letter-spacing: 1.5px;
+    }
+    nav.navbar.transparent-black.top-nav-collapse .logo-light {
+        display: none;
+    }
+    nav.navbar.transparent-black.top-nav-collapse .logo-dark {
+        display: initial;
+    }
+}
+.transparent-black .navbar-nav>li>a {
+    color: #000;
+}
+.transparent-black .navbar-nav>li>a:hover {
+    color: #000;
+}
+.transparent-black .navbar-nav>li>a:focus {
+    color: #000;
+}
+.transparent-black.navbar {
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3)!important;
+}
+.transparent-black.navbar .logo-light {
+    display: none;
+}
+.transparent-black.navbar .logo-dark {
+    display: initial;
+}
+.transparent-black.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+/*---------- Black Navigation With White Text Color ----------*/
+@media (min-width: 768px) {
+    nav.navbar.navbar-black {
+        background-color: #000;
+        box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.3)!important;
+    }
+    .navbar-black li a {
+        color: #fff!important;
+        letter-spacing:2px;
+    }
+    nav.navbar.navbar-black .logo-light {
+        display: initial;
+    }
+    nav.navbar.navbar-black .logo-dark {
+        display: none;
+    }
+    nav.navbar.navbar-black.top-nav-collapse {
+        background-color: #000;
+        box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.3)!important;
+    }
+    .navbar-black.top-nav-collapse li a {
+        color: #fff!important;
+        letter-spacing: 2px;
+    }
+    nav.navbar.navbar-black.top-nav-collapse .logo-light {
+        display: initial;
+    }
+    nav.navbar.navbar-black.top-nav-collapse .logo-dark {
+        display: none;
+    }
+}
+.navbar-black .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-black .navbar-nav>li>a:hover {
+    color: #fff;
+}
+.navbar-black .navbar-nav>li>a:focus {
+    color: #fff;
+}
+.navbar-black.navbar {
+    background-color: #000;
+    box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.3)!important;
+}
+.navbar-black.navbar .logo-light {
+    display: initial;
+}
+.navbar-black.navbar .logo-dark {
+    display: none;
+}
+.navbar-black.navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/*---------- White Navigation With Black Text Color ----------*/
+@media (min-width: 768px) {
+    nav.navbar.navbar-white {
+        background-color: #fff;
+        box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3)!important;
+    }
+    .navbar-white li a {
+        color: #000!important;
+        letter-spacing: 1.5px;
+    }
+    nav.navbar.navbar-white .logo-light {
+        display: none;
+    }
+    nav.navbar.navbar-white .logo-dark {
+        display: initial;
+    }
+    nav.navbar.navbar-white.top-nav-collapse {
+        background-color: #fff;
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08)!important;;
+    }
+    .navbar-white.top-nav-collapse li a {
+        color: #000!important;
+        letter-spacing: 1.5px;
+    }
+    nav.navbar.navbar-white.top-nav-collapse .logo-light {
+        display: none;
+    }
+    nav.navbar.navbar-white.top-nav-collapse .logo-dark {
+        display: initial;
+    }
+}
+.navbar-white .navbar-nav>li>a {
+    color: #000;
+}
+.navbar-black .navbar-nav>li>a:hover {
+    color: #000;
+}
+.navbar-black .navbar-nav>li>a:focus {
+    color: #000;
+}
+.navbar-white.navbar {
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3)!important;
+}
+.navbar-white.navbar .logo-light {
+    display: none;
+}
+.navbar-white.navbar .logo-dark {
+    display: initial;
+}
+.navbar-white.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+/*---------- Logo ----------*/
+.navbar-brand {
+    padding: 0;
+    position: relative;
+}
+.navbar-brand img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-height: 55px;
+}
+@media (max-width: 767px) {
+    .container .navbar-header {
+        margin-right: 5px;
+        margin-left:  5px;
+    }
+}
+@media (min-width: 768px) {
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin: 0;
+    }
+}
+#ion-icons li{
+    display: inline-block;
+    text-align: center;
+    color: #191a1c;
+    padding: 30px;
+    margin: 3px 0px 3px 3px;
+    z-index: 0;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/*---------- 3. Hero Section ----------*/
+.hero-main {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+.hero-fullwidth {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: #000;
+}
+.hero-video {
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+#hero-youtube {
+    position: absolute;
+    background-color: #0f1112;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -9;
+    overflow: hidden;
+}
+.hero-container {
+    position: relative;
+    display: table;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 75px;
+} 
+.hero-content {
+    display: table-cell;
+    height: 100%;
+    /*vertical-align: middle;*/
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.hero-content h5 {
+    letter-spacing: 1px;
+}
+.content-container {
+    position: relative;
+    height: 100%;
+    padding-top: 75px;
+    text-align: center;
+}
+.content {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.content-slider.owl-carousel .owl-item,
+.content-slider.owl-carousel  .owl-item:active {
+    cursor: default;
+}
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+/*---------- 4. About Section ----------*/
+.fact-container {
+    margin: 20px 25px;
+}
+.counter {
+    font-family: 'Vodafone ExB', sans-serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+}
+@media  (max-width: 435px) {
+    .counter{
+        font-size: 32px;
+    }
+}
+
+
+
+
+/*---------- 5. Services Section ----------*/
+.service-container {
+    transform: none!important;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+}
+.service-title.demo-light h2 {
+    letter-spacing: 1px;
+}
+.service-title h2 {
+    font-family: 'Vodafone ExB';
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    transition: all ease .4s;
+}
+.service-body {
+    padding-top:30px;
+}
+.icon-container {
+    cursor: pointer;
+    display: table;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    /*border-radius: 50%;*/
+}
+.icon-container i {
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    transition: all ease .4s;
+}
+@media  (max-width: 770px) {
+    .icon-container {
+        background-image: none!important;
+        background-color: #000;
+    }
+}
+@media  (max-width: 995px) {
+    .col-xs-9 {
+        margin: auto;
+    }
+}
+
+
+
+
+/*---------- 6. Attributes Section ----------*/
+.feature-container {
+    cursor: default;
+    padding: 20px 0;
+}
+.feature-body {
+    text-align: left;
+    padding-left: 85px;
+}
+.feature-body p {
+    color: #979494;
+}
+.feature-icon {
+    float: left;
+}
+
+
+
+
+/*---------- 7. Portfolio Section ----------*/
+.cbp-l-caption-alignCenter .cbp-l-caption-body {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+    bottom: 5%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    cursor:zoom-in;
+}
+.cbp-lightbox img {
+    -webkit-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -ms-transition: transform .4s;
+    transition: transform .4s;
+}
+.cbp-lightbox:hover img {
+    transform: scale(1.1);
+
+}
+.cbp-l-caption-alignCenter .cbp-l-caption-body:hover {
+    transform: translateY(5%);
+}
+.cbp-popup-lightbox .cbp-popup-next {
+    background: url(../img/assets/cbp-sprite.png) no-repeat scroll -46px 0 transparent;
+}
+.cbp-popup-lightbox .cbp-popup-prev{
+    background: url(../img/assets/cbp-sprite.png) no-repeat scroll 0 0 transparent;
+}
+.caption-title {
+    color: #fff;
+}
+.cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
+    background-color: transparent;
+    border: none;
+    cursor: default;
+}
+.cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active, .cbp-l-filters-button .cbp-filter-item:hover {
+    background-color: transparent;
+    border: none;
+}
+.cbp-l-filters-button .cbp-filter-item {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Vodafone ExB';
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px 17px 0px 17px;
+    border-radius: 0px;
+    margin: 0;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+.cbp-popup-lightbox {
+    cursor: zoom-out;
+}
+.cbp-l-filters-button  {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+}
+
+
+
+
+/*---------- 8. Team Section ----------*/
+.team-info h3 {
+    letter-spacing: 1px;
+}
+.team-info {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+.team-image img {
+    margin: auto;
+}
+@media (max-width: 768px) {
+    .team-info {
+        text-align: center;    
+    }
+}  
+
+
+
+
+/*---------- 9. Info Section ----------*/
+#info h2 {
+    letter-spacing: 1px;
+}
+
+
+
+
+/*---------- 10. Clients Section ----------*/
+.owl-clients .owl-item img {
+    width: auto!important;
+    margin: auto!important;
+    max-height: 80px;
+}
+
+
+
+
+/*---------- 11. Testimonials Section ----------*/
+.owl-item {
+    padding: 5px;
+}
+.testimonial-body i {
+    padding:5px;
+}
+@media (max-width: 405px) {
+    .testimonial-quote h5 {
+        font-size: 16px;
+    }  
+}
+
+
+
+
+/*---------- 12. Contact Section ----------*/
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    margin: 10px 0;
+    font: 300 16px/27.2px 'Vodafone Rg', sans-serif;
+    color: #aeaeae;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #999;
+    box-shadow: none;
+    border-radius: 0px;
+    outline: none;
+}
+.form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+.form-group:first-child {
+    float: left;
+    width:45%;
+}
+.form-group:nth-child(2) {
+    float: right;
+    width: 55%;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 300 20px/32px 'Vodafone Rg', sans-serif;
+    color: inherit;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+
+
+
+/*---------- 13. Google Maps Section ----------*/  
+#map {
+    width: 100%;
+    height: 100%;
+    height: 500px;
+}
+@media  (max-width: 767px) {
+    #map {
+        display: none;
+    }
+}
+
+
+
+
+/*---------- 14. Footer Section ----------*/
+#footer ul {
+    margin-bottom: 0;
+}
+#footer .social-icons li {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+#footer .social-icons li a i {
+    position: relative;
+    top: 3px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+.social-icons a:focus{
+    color: #fff;
+}
+.detail {
+    margin: 25px 0px;
+}
+.detail i {
+    padding-bottom: 20px;
+    font-size: 3em;
+}
+
+
+
+
+/*----- 15. Back to Top Button -----*/
+#back-to-top {
+    position: fixed;
+    color: #fff;
+    z-index: 100;
+    bottom: 32px;
+    right: 32px;
+    display: none;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 30px;
+    width: 30px;
+    display: block;
+    text-align: center;
+    opacity: 0;
+    transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -webkit-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+}
+#back-to-top:hover {
+    color: #fff;
+    background-color: #1F2023;
+}
+#back-to-top .icon {
+    font-size: 10px;
+}
+
+
+
+
+/*---------- 16. Spacing ----------*/
+
+/* Padding */
+.p0{padding: 0px}
+.p5{padding: 5px}
+.p10{padding: 10px}
+.p15{padding: 15px}
+.p20{padding: 20px}
+.p30{padding: 30px}
+.p40{padding: 40px}
+.p50{padding: 50px}
+.p60{padding: 60px}
+.p70{padding: 70px}
+.p80{padding: 80px}
+.p90{padding: 90px}
+.p100{padding: 100px}
+.p110{padding: 110px}
+.p120{padding: 120px}
+.p130{padding: 130px}
+.p140{padding: 140px}
+.p150{padding: 150px}
+
+/* Padding Top */
+.pt0{padding:0px}
+.pt5{padding-top:5px}
+.pt10{padding-top:10px}
+.pt15{padding-top:15px}
+.pt20{padding-top:20px}
+.pt30{padding-top:30px}
+.pt40{padding-top:40px}
+.pt50{padding-top:50px}
+.pt60{padding-top:60px}
+.pt70{padding-top:70px}
+.pt80{padding-top:80px}
+.pt90{padding-top:90px}
+.pt100{padding-top:100px}
+.pt110{padding-top:110px}
+.pt120{padding-top:120px}
+.pt130{padding-top:130px}
+.pt140{padding-top:140px}
+.pt150{padding-top:150px}
+
+/* Padding Bottom */
+.pb0{padding-bottom:0px}
+.pb5{padding-bottom:5px}
+.pb10{padding-bottom:10px}
+.pb15{padding-bottom:15px}
+.pb20{padding-bottom:20px}
+.pb30{padding-bottom:30px}
+.pb40{padding-bottom:40px}
+.pb50{padding-bottom:50px}
+.pb60{padding-bottom:60px}
+.pb70{padding-bottom:70px}
+.pb80{padding-bottom:80px}
+.pb90{padding-bottom:90px}
+.pb100{padding-bottom:100px}
+.pb110{padding-bottom:110px}
+.pb120{padding-bottom:120px}
+.pb130{padding-bottom:130px}
+.pb140{padding-bottom:140px}
+.pb150{padding-bottom:150px}
+
+/* Padding Left */
+.pl0{padding-left:0px}
+.pl5{padding-left:5px}
+.pl10{padding-left:10px}
+.pl15{padding-left:15px}
+.pl20{padding-left:20px}
+.pl30{padding-left:30px}
+.pl40{padding-left:40px}
+.pl50{padding-left:50px}
+.pl60{padding-left:60px}
+.pl70{padding-left:70px}
+.pl80{padding-left:80px}
+.pl90{padding-left:90px}
+.pl100{padding-left:100px}
+.pl110{padding-left:110px}
+.pl120{padding-left:120px}
+.pl130{padding-left:130px}
+.pl140{padding-left:140px}
+.pl150{padding-left:150px}
+
+/* Padding Right */
+.pr0{padding-right:0px}
+.pr5{padding-right:5px}
+.pr10{padding-right:10px}
+.pr15{padding-right:15px}
+.pr20{padding-right:20px}
+.pr30{padding-right:30px}
+.pr40{padding-right:40px}
+.pr50{padding-right:50px}
+.pr60{padding-right:60px}
+.pr70{padding-right:70px}
+.pr80{padding-right:80px}
+.pr90{padding-right:90px}
+.pr100{padding-right:100px}
+.pr110{padding-right:110px}
+.pr120{padding-right:120px}
+.pr130{padding-right:130px}
+.pr140{padding-right:140px}
+.pr150{padding-right:150px}
+
+
+
+/* Negative Margins */
+.mt-5{margin-top: -5px}
+.mt-10{margin-top: -10px}
+.mt-15{margin-top: -15px}
+
+.mb-5{margin-bottom: -5px}
+.mb-10{margin-bottom: -10px}
+.mb-15{margin-bottom: -15px}
+
+.ml-5{margin-left: -5px}
+.ml-10{margin-left: -10px}
+.ml-15{margin-left: -15px}
+
+.mr-5{margin-right: -5px}
+.mr-10{margin-right: -10px}
+.mr-15{margin-right: -15px}
+
+/* Margin Auto */
+.m-auto{margin:0 auto; float: none}
+
+/* Margin */
+.m0{margin: 0px}
+.m5{margin: 5px}
+.m10{margin: 10px}
+.m15{margin: 15px}
+.m20{margin: 20px}
+.m30{margin: 30px}
+.m40{margin: 40px}
+.m50{margin: 50px}
+.m60{margin: 60px}
+.m70{margin: 70px}
+.m80{margin: 80px}
+.m90{margin: 90px}
+.m100{margin: 100px}
+.m110{margin: 110px}
+.m120{margin: 120px}
+.m130{margin: 130px}
+.m140{margin: 140px}
+.m150{margin: 150px}
+
+/* Margin Top */
+.mt0{margin-top:0}
+.mt5{margin-top:5px}
+.mt10{margin-top:10px}
+.mt15{margin-top:15px}
+.mt20{margin-top:20px}
+.mt30{margin-top:30px}
+.mt40{margin-top:40px}
+.mt50{margin-top:50px}
+.mt60{margin-top:60px}
+.mt70{margin-top:70px}
+.mt80{margin-top:80px}
+.mt90{margin-top:90px}
+.mt100{margin-top:100px}
+.mt110{margin-top:110px}
+.mt120{margin-top:120px}
+.mt130{margin-top:130px}
+.mt140{margin-top:140px}
+.mt150{margin-top:150px}
+
+/* Margin Bottom */
+.mb0{margin-bottom:0}
+.mb5{margin-bottom:5px}
+.mb10{margin-bottom:10px}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.mb30{margin-bottom:30px}
+.mb40{margin-bottom:40px}
+.mb50{margin-bottom:50px}
+.mb60{margin-bottom:60px}
+.mb70{margin-bottom:70px}
+.mb80{margin-bottom:80px}
+.mb90{margin-bottom:90px}
+.mb100{margin-bottom:100px}
+.mb110{margin-bottom:110px}
+.mb120{margin-bottom:120px}
+.mb130{margin-bottom:130px}
+.mb140{margin-bottom:140px}
+.mb150{margin-bottom:150px}
+
+/* Margin Left */
+.ml0{margin-left:0}
+.ml15{margin-left:5px}
+.ml10{margin-left:10px}
+.ml20{margin-left:20px}
+.ml30{margin-left:30px}
+.ml40{margin-left:40px}
+.ml50{margin-left:50px}
+.ml60{margin-left:60px}
+.ml70{margin-left:70px}
+.ml80{margin-left:80px}
+.ml90{margin-left:90px}
+.ml100{margin-left:100px}
+.ml110{margin-left:110px}
+.ml120{margin-left:120px}
+.ml130{margin-left:130px}
+.ml140{margin-left:140px}
+.ml150{margin-left:150px}
+
+/* Margin Right */
+.mr0{margin-right:0}
+.mr5{margin-right:5px}
+.mr10{margin-right:10px}
+.mr15{margin-right:15px}
+.mr20{margin-right:20px}
+.mr30{margin-right:30px}
+.mr40{margin-right:40px}
+.mr50{margin-right:50px}
+.mr60{margin-right:60px}
+.mr70{margin-right:70px}
+.mr80{margin-right:80px}
+.mr90{margin-right:90px}
+.mr100{margin-right:100px}
+.mr110{margin-right:110px}
+.mr120{margin-right:120px}
+.mr130{margin-right:130px}
+.mr140{margin-right:140px}
+.mr150{margin-right:150px}
+
+/* Borders And Separators */
+.separator {
+    width: 90px;
+    height: 1px;
+}
+.black-separator {
+    width: 90px;
+    height: 1px;
+    border-bottom: 2px solid #000;
+}
+.border-top {
+    border-top: solid 1px #282828;
+}
+
+
+
+
+/*---------- 17. Icon Sizes ----------*/
+.x5 { font-size:8em}
+.x4 { font-size:6em}
+.x3 { font-size:4.2em}
+.x2 { font-size:2em}
+.x1 { font-size:1.3em}
+
+
+
+
+/*---------- 18. Typography ----------*/
+.lspacing {
+    letter-spacing: 2px;
+}
+h6, h5, h4, h3, h2, h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p {
+    font: 300 16px/27.2px 'Vodafone Rg', sans-serif;
+    color: #aeaeae;
+}
+h6 {
+    font:300 15px/25px 'Vodafone Rg', sans-serif;
+    color: #fdfaf0;
+}
+h5 {
+    font:300 20px/32px 'Vodafone Rg', sans-serif;
+    color: #aeaeae;
+    text-transform: none;
+}
+h4 {
+    font-family: 'Vodafone Rg';
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    color: #0f1113;
+}
+h3 {
+    font-family: 'Vodafone ExB';
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: #0f1113;
+}
+.h2bold {
+    font-family: 'Vodafone ExB';
+    font-size: 51px;
+    font-weight: normal;
+    line-height: 25.2px;
+    letter-spacing: .5px;
+    color: #0f1113;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Vodafone ExB', sans-serif;
+    font-weight: 200;
+    letter-spacing:-1.5px;
+    font-size: 55px;
+    line-height: 1;
+    color: #0f1113;
+    font-feature-settings: 'lnum';
+    -moz-font-feature-settings: 'lnum=1';
+    -ms-font-feature-settings: 'lnum';
+    -webkit-font-feature-settings: 'lnum';
+    -o-font-feature-settings: 'lnum';
+}
+h1 small {
+    font-family: 'Vodafone Rg';
+    font-weight: normal;
+    letter-spacing: 0px;
+    font-size: 70px;
+    line-height: 1.2;
+    text-transform: none;
+}
+h1 {
+    font-family: 'Vodafone ExB';
+    font-weight: normal;
+    letter-spacing: 8px;
+    font-size: 65px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+@media  (max-width: 767px) {
+    h1 {
+        font-size: 50px;
+        line-height: 1.2;
+    }
+}
+@media  (max-width: 491px) {
+    h1 {
+        font-size: 35px;
+        line-height: 1.4;    
+    }
+}
+@media  (max-width: 418px) {
+    h1 {
+        font-size: 30px;
+        line-height: 1.6;    
+    }
+}
+@media  (max-width: 380px) {
+    h1 {
+        font-size: 25px;
+        line-height: 1.8;
+    }
+    .hero-content h5 {
+        font: 300 14px/32px 'Vodafone Rg', sans-serif;
+    }
+}
+@media  (max-width: 435px) {
+    .h2bold {
+        font-size: 38px;
+        letter-spacing: 1px;
+    }
+}
+@media  (max-width: 435px) {
+    h2 {
+        font-size: 42px;
+    }
+}
+
+
+
+
+/*---------- 19. Colors ----------*/
+
+/*---------- Text Colors ----------*/
+/* WHITE */
+.white {
+    color: #fff;
+}
+.white p,
+.white h1,
+.white h1 small,
+.white h2,
+.white h3,
+.white h4,
+.white .h2bold,
+.white h5,
+.white h6 {
+    color: #fff;
+}
+/* BLACK */
+.black {
+    color: #0f1113;
+}
+.black p,
+.black h1,
+.black h2,
+.black h3,
+.black h4,
+.black .h2bold,
+.black h5,
+.black h6 {
+    color: #0f1113;
+}
+/* GRAY */
+.gray p,
+.gray h1,
+.gray h2,
+.gray h3,
+.gray h4,
+.gray .h2bold,
+.gray h5,
+.gray h6 {
+    color: #aeaeae;
+}
+/*---------- Background Colors ----------*/
+.bg-black {
+    background-color: #000;
+}
+.bg-dark {
+    background-color: #683b2a;
+}
+.bg-gray {
+    background-color: #f8f8f8;
+}
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-process {
+    background-color: #683b2a;
+
+}
+
+
+
+
+/*---------- 20. Parallax ----------*/
+.parallax {
+    position: relative;
+    overflow: hidden;
+}
+.parallax .container {
+    position: relative;
+    z-index: 2;
+}
+.parallax > .background-image {
+    height: 100vh;
+    top: -50vh;
+    -webkit-transition: opacity 0.9s ease;
+    -moz-transition: opacity 0.9s ease;
+    transition: opacity 0.9s ease;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+.hero-main .background-image {
+    top: 0;
+}
+.hero-fullwidth .background-image {
+    top: 0;
+}
+@media all and (max-width: 1024px) {
+    .parallax > .background-image,
+    .parallax .background-image {
+        top: 0 !important;
+        -webkit-transform: none !important;
+        -moz-transform: none !important;
+        transform: none !important;
+        height: 100%;
+    }
+}
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    z-index: 0;
+    opacity: 0;
+    background-color: #1c1c1c;
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+}
+.background-image img {
+    display: none
+}
+.parallaxe {
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+/*---------- 21. Vertical / Horizontal Centering ----------*/
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+.flex-column {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-reverse {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
+}
+.vertical-align {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+@media ( min-width: 992px ) {
+    .vertical-align {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.align-vertical {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+.center-table {
+    display: table;
+}
+.center-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+/*---------- 22. Buttons ----------*/
+.btn {
+    font-family: 'Vodafone ExB';
+    padding: 17px 21px 13px 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+.btn-main {
+    font-family: 'Vodafone ExB';
+    padding: 17px 21px 13px 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+.btn-light {
+    font-family: 'Vodafone ExB';
+    padding: 17px 21px 13px 22px;
+    color: #000;
+    background-color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+.btn-dark {
+    font-family: 'Vodafone ExB';
+    padding: 17px 21px 13px 22px;
+    color: #fff;
+    background-color: #000;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+.btn-ghost-light {
+    font-family: 'Vodafone ExB';
+    padding: 16px 21px 14px 22px;
+    border: 2px solid #e3e3e3;
+    color: #fff;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 2px;
+    border-radius: 3px;
+
+}
+.btn-ghost-dark {
+    font-family: 'Vodafone ExB';
+    padding: 16px 21px 14px 22px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+/*---------- Button Hover & Focus ----------*/
+.btn-main:hover, .btn-main:focus {
+    background-color: #fff;
+    color: #000;
+    outline: none;
+}
+.btn-light:hover, .btn-light:focus {
+    background-color: #000;
+    color: #fff;
+    outline: none;
+}
+.btn-dark:hover, .btn-dark:focus {
+    background-color: #fff;
+    color: #000;
+    outline: none;
+}
+.btn-ghost-light:hover, .btn-ghost-light:focus {
+    background-color: #fff;
+    border-color: transparent;
+    color: #000;
+    outline: none;
+}
+.btn-ghost-dark:hover, .btn-ghost-dark:focus {
+    background-color: #000;
+    border-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+
+
+
+/*---------- 23. Owl Carousel ----------*/
+.owl-carousel .owl-item {
+    cursor: move;    
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}         
+.owl-carousel  .owl-item:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}  
+.owl-dot {
+    display: inline-block;
+    padding: 3px;
+}
+.owl-theme .owl-controls .owl-dot span {
+    width: 4px;
+    height: 4px;
+    margin: 3px;
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px; 
+    box-shadow: none;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.owl-theme .owl-controls .owl-dot.active span {
+    background: rgba(255, 255, 255, 0.8);
+}
+.owl-item {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+}
+
+
+/* Hero Slider */ 
+.hero-slider,
+.hero-slider .owl-stage-outer,
+.hero-slider .owl-wrapper-outer,
+.hero-slider .owl-height,
+.hero-slider .owl-stage,
+.hero-slider .owl-wrapper,
+.hero-slider .owl-item {
+    height: 100% !important;    
+}   
+.hero-slider .owl-stage { 
+}
+.hero-slider .slide { 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%!important; 
+}    
+.owl-item .appear {
+    opacity: 0;
+    margin-top: 100px!important; 
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+} 
+.owl-item .appear {   
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+} 
+.owl-item.active .appear {
+    opacity: 1;
+    margin-top: 0!important;
+} 
+.owl-controls {   
+    margin-top: 0!important;
+}
+.navigation-thin.owl-theme .owl-controls .owl-nav div {
+    color: #FFF;
+    display: inline-block; 
+    padding: 20px;
+    font-size: 42px;
+    border-radius: 0;
+    background: transparent;  
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.navigation-thin.owl-theme .owl-controls .owl-nav div {
+    position: absolute;
+}  
+.navigation-thin.owl-theme .owl-controls .owl-nav div {
+    opacity: 0;
+}
+.navigation-thin:hover.owl-theme .owl-controls .owl-nav div {
+    opacity: 1;
+}
+.navigation-thin .owl-prev {
+    margin-left: 40px!important; 
+}
+
+.navigation-thin .owl-next {
+    margin-right: 40px!important; 
+}
+.navigation-thin:hover .owl-prev {
+    opacity: .8;
+    margin-left: 0!important; 
+}
+.navigation-thin:hover .owl-next {
+    opacity: .8;
+    margin-right: 0!important; 
+}
+.navigation-thin .owl-prev:hover,
+.navigation-thin .owl-next:hover {
+    opacity: 1; 
+}
+.navigation-thin.owl-theme .owl-controls .owl-nav .owl-prev {
+    left: 0;
+    top: 50%;
+    margin-top: -36px;
+}
+.navigation-thin.owl-theme .owl-controls .owl-nav .owl-next {
+    right: 0;
+    top: 50%;
+    margin-top: -36px;
+}
+
+
+
+
+/*---------- 24. Preloader ----------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000; /* change if the mask should have another color then white */
+    z-index: 9999; /* makes sure it stays on top */
+}
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/assets/preloader.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+
+
+
+
+/*---------- Demos ----------*/
+.img-container {
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+    margin: 15px;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -ms-transition: all .4s;
+    transition: all .4s;
+}
+.img-container .img-responsive {
+    min-width: 100%;
+    min-width: 100%;
+}
+#demos .col-md-6{
+    padding: 0;
+}
+.img-container:hover {
+    transform: translateY(-2%);
+}
+.img-container:hover .overlay {
+    opacity: 1;
+}
+.img-container img {
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -ms-transition: all .4s;
+    transition: all .4s;
+}
+
+.gray {
+     color: #dfd2ad;
+}

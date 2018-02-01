@@ -1,0 +1,6 @@
+table-name= service_section
+table-column:-
+	section_element ==== eg: grow
+	section_element_img ==== eg: image/icon address
+	section_content ==== details of particular section.
+	
